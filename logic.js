@@ -104,7 +104,7 @@ const __showError = (e) => {
 const pi = 22 / 7;
 
 const clear = () => {
-  window.location.href = "/"
+  window.location.href = window.location.href
 }
 
 const sum = (...v) => {
