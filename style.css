@@ -65,6 +65,7 @@ body {
     font-size: 2.5rem;
     text-align: right;
     padding: 5px 0;
+    margin: 10px 0;
     color: var(--text-color);
     background: var(--main-color);
 }
@@ -184,4 +185,69 @@ body {
     border-radius: 0;
     width: 25%;
     margin-bottom: 0;
+}
+
+.neon {
+    --main-color: #14061f;
+}
+
+.neon .btn-a {
+    border-radius: 10px;
+    width: 21%;
+    margin-bottom: 17px;
+}
+
+.neon .btn-b {
+    border-radius: 10px;
+    width: 21%;
+    margin-bottom: 17px;
+}
+
+.neon .btn-c {
+    border-radius: 10px;
+    width: 21%;
+    margin-bottom: 17px;
+}
+
+.neon .btn-a {
+    background: #48136e71;
+}
+
+.neon .btn-a:hover {
+    background: #a834ebbe;
+    box-shadow: 0 0 10px 3px #a834eb4b;
+}
+
+.neon .btn-a:active {
+    background: #a200ff11;
+    box-shadow: 0 0 10px 6px #a834eb4b;
+}
+
+.neon .btn-c {
+    background: #48136e3a;
+}
+
+.neon .btn-c:hover {
+    background: #a834eb5b;
+    box-shadow: 0 0 10px 3px #9a45cc4b;
+}
+
+.neon .btn-c:active {
+    background: #a200ff11;
+    box-shadow: 0 0 10px 6px #9a45cc4b;
+}
+
+.neon .btn-b {
+    background: #a834eb;
+}
+
+.neon .btn-b:hover {
+    background: #a657d4;
+    box-shadow: 0 0 10px 3px #a200ff83;
+}
+
+.neon .btn-b:active {
+    color: #fff;
+    background: #a200ff11;
+    box-shadow: 0 0 10px 6px #a200ff83;
 }
