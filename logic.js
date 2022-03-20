@@ -19,10 +19,11 @@ for (const btn of ibtn) {
 
 const __addValue = (v) => {
   if (v === '_sum') {
-    if (calcInput.value === 'clear' || calcInput.value === 'dark' || calcInput.value === 'light') {
+    if (calcInput.value === 'clear' || calcInput.value === 'dark' || calcInput.value === 'light' || calcInput.value === 'material') {
       calcInput.value === 'clear' ? clear() : null
-      calcInput.value === 'dark' ? dark() : null
-      calcInput.value === 'light' ? light() : null
+      calcInput.value === 'dark' ? __dark() : null
+      calcInput.value === 'light' ? __light() : null
+      calcInput.value === 'material' ? __material() : null
       hisValue = calcInput.value
       calcInput.value = ''
       his.innerHTML = hisValue
@@ -101,6 +102,18 @@ const __showError = (e) => {
   }
 }
 
+const __dark = () => {
+  document.body.classList.remove("light")
+}
+
+const __light = () => {
+  document.body.classList.add("light")
+}
+
+const __material = () => {
+  document.body.classList.toggle("mat-theme")
+}
+
 const pi = 22 / 7;
 
 const clear = () => {
@@ -115,10 +128,3 @@ const sum = (...v) => {
   return val
 }
 
-const dark = () => {
-  document.body.classList.remove("light")
-}
-
-const light = () => {
-  document.body.classList.add("light")
-}

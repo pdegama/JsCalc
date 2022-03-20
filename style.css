@@ -165,3 +165,23 @@ body {
     width: 100%;
     color: rgba(255, 0, 0, 0.938);
 }
+
+/* Material Theme */
+
+.mat-theme .btn-a {
+    border-radius: 0;
+    width: 25%;
+    margin-bottom: 0;
+}
+
+.mat-theme .btn-b {
+    border-radius: 0;
+    width: 25%;
+    margin-bottom: 0;
+}
+
+.mat-theme .btn-c {
+    border-radius: 0;
+    width: 25%;
+    margin-bottom: 0;
+}
