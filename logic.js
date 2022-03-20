@@ -19,14 +19,22 @@ for (const btn of ibtn) {
 
 const __addValue = (v) => {
   if (v === '_sum') {
-    if (calcInput.value === 'clear' || calcInput.value === 'dark' || calcInput.value === 'light' || calcInput.value === 'material' || calcInput.value === '1+') {
+    if (
+      calcInput.value === 'clear' ||
+      calcInput.value === 'dark' ||
+      calcInput.value === 'light' ||
+      calcInput.value === 'material' ||
+      calcInput.value === '1+'||
+      calcInput.value === '3333360'
+    ) {
+
       calcInput.value === 'clear' ? clear() : null
       calcInput.value === 'dark' ? __dark() : null
       calcInput.value === 'light' ? __light() : null
       calcInput.value === 'material' ? __material() : null
-      if (calcInput.value === '1+') {
-        err.innerHTML = "This Is Not 1+ Device"
-      }
+      calcInput.value === '1+' ? err.innerHTML = "This Is Not 1+ Device" : null
+      calcInput.value === '3333360' ? window.location.href = "https://www.google.com/search?q=pacman" : null
+      
       hisValue = calcInput.value
       calcInput.value = ''
       his.innerHTML = hisValue
