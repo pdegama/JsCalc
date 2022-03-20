@@ -162,3 +162,14 @@ const sum = (...v) => {
   return val
 }
 
+const power = (v, p) => {
+  let val = 1
+  for (let index = 0; index < p; index++) {
+    val = val * v
+  }
+  return val
+}
+
+const log = (x) =>  x > -1 ? Math.log(x) : 0;
+
+
