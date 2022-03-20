@@ -167,26 +167,6 @@ body {
     color: rgba(255, 0, 0, 0.938);
 }
 
-/* Material Theme */
-
-.mat-theme .btn-a {
-    border-radius: 0;
-    width: 25%;
-    margin-bottom: 0;
-}
-
-.mat-theme .btn-b {
-    border-radius: 0;
-    width: 25%;
-    margin-bottom: 0;
-}
-
-.mat-theme .btn-c {
-    border-radius: 0;
-    width: 25%;
-    margin-bottom: 0;
-}
-
 .neon {
     --main-color: #14061f;
 }
@@ -250,4 +230,32 @@ body {
     color: #fff;
     background: #a200ff11;
     box-shadow: 0 0 10px 6px #a200ff83;
+}
+
+
+/* Material Theme */
+
+.mat-theme .btn-a {
+    border-radius: 0;
+    width: 25%;
+    margin-bottom: 0;
+    z-index: 99999;
+}
+
+.mat-theme .btn-b {
+    border-radius: 0;
+    width: 25%;
+    margin-bottom: 0;
+    z-index: 99999;
+}
+
+.mat-theme .btn-c {
+    border-radius: 0;
+    width: 25%;
+    margin-bottom: 0;
+    z-index: 99999;
+}
+
+.mat-theme.neon .btn-a:hover, .mat-theme.neon .btn-b:hover, .mat-theme.neon .btn-b:hover {
+    z-index: 999999 !important;
 }
