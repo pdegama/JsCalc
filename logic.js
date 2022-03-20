@@ -32,7 +32,7 @@ const __addValue = (v) => {
       calcInput.value === 'dark' ? __dark() : null
       calcInput.value === 'light' ? __light() : null
       calcInput.value === 'material' ? __material() : null
-      calcInput.value === '1+' ? err.innerHTML = "This Is Not 1+ Device" : null
+      calcInput.value === '1+' ? __oneplus() : null
       calcInput.value === '3333360' ? window.location.href = "https://www.google.com/search?q=pacman" : null
       
       hisValue = calcInput.value
@@ -105,12 +105,26 @@ const __showError = (e) => {
     err.innerHTML = "&nbsp;"
   } else {
     if (new RegExp("SyntaxError:").test(e)) {
-      console.log(e);
       err.innerHTML = e.substring(13, e.length)
     } else if (new RegExp("ReferenceError:").test(e)) {
       err.innerHTML = e.substring(16, e.length)
     }
   }
+}
+
+let cond1 = 0;
+const __oneplus = () => {
+  if (cond1 === 0) {
+    err.innerHTML = "This Is Not 1+ Device"
+  } else if (cond1 === 1) {
+    err.innerHTML = "Beta Bola Na 1+ Nahi He."
+  } else if (cond1 === 2) {
+    err.innerHTML = "Bola Na 1+ Nahi He... 😡️ 😡️ 😡️"
+  } else if (cond1 >= 3) {
+    err.innerHTML = "Error x45071"
+  }
+
+  cond1++;
 }
 
 const __dark = () => {
