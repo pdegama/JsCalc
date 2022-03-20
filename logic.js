@@ -23,6 +23,7 @@ const __addValue = (v) => {
       calcInput.value === 'clear' ||
       calcInput.value === 'dark' ||
       calcInput.value === 'light' ||
+      calcInput.value === 'neon' ||
       calcInput.value === 'material' ||
       calcInput.value === '1+'||
       calcInput.value === '3333360'
@@ -31,10 +32,11 @@ const __addValue = (v) => {
       calcInput.value === 'clear' ? clear() : null
       calcInput.value === 'dark' ? __dark() : null
       calcInput.value === 'light' ? __light() : null
+      calcInput.value === 'neon' ? __neon() : null
       calcInput.value === 'material' ? __material() : null
       calcInput.value === '1+' ? __oneplus() : null
       calcInput.value === '3333360' ? window.location.href = "https://www.google.com/search?q=pacman" : null
-      
+
       hisValue = calcInput.value
       calcInput.value = ''
       his.innerHTML = hisValue
@@ -128,11 +130,18 @@ const __oneplus = () => {
 }
 
 const __dark = () => {
+  document.body.classList.remove("neon")
   document.body.classList.remove("light")
 }
 
 const __light = () => {
+  document.body.classList.remove("neon")
   document.body.classList.add("light")
+}
+
+const __neon = () => {
+  document.body.classList.remove("light")
+  document.body.classList.add("neon")
 }
 
 const __material = () => {
