@@ -148,7 +148,10 @@ const __material = () => {
   document.body.classList.toggle("mat-theme")
 }
 
-const pi = 22 / 7;
+const pi = Math.IP
+const inf = Infinity
+const log2e = Math.LOG2E
+const log10e = Math.LOG10E
 
 const clear = () => {
   window.location.href = window.location.href
@@ -162,14 +165,27 @@ const sum = (...v) => {
   return val
 }
 
-const power = (v, p) => {
-  let val = 1
-  for (let index = 0; index < p; index++) {
-    val = val * v
+const mul = (...v) => {
+  let val = 1;
+  for (const vA of v) {
+    val = val * vA
   }
   return val
 }
 
-const log = (x) =>  x > -1 ? Math.log(x) : 0;
-
-
+const power = (v, p) => Math.pow(v, p)
+const log = x =>  x > -1 ? Math.log(x) : 0
+const log10 = x =>  x > -1 ? Math.log10(x) : 0
+const log1p = x =>  x > -1 ? Math.log1p(x) : 0
+const log2 = x =>  x > -1 ? Math.log2(x) : 0
+const exp = x =>  Math.exp(x)
+const abs = x =>  Math.abs(x)
+const floor = x => Math.floor(x)
+const round = x => Math.round(x)
+const random = x => Math.random(x)
+const sign = x => Math.sign(x)
+const sine = x => Math.sin(x)
+const sinh = x => Math.sinh(x)
+const sqrt = x => Math.sqrt(x)
+const tan = x => Math.tan(x)
+const tanh = x => Math.tanh(x)
