@@ -1,2 +1,2 @@
 # JsCalc
-Simple Javascript Calculator 🧮️ 🧮️ 🧮️
+Simple Javascript Calculator
